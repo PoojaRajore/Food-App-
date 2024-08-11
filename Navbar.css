@@ -1,0 +1,94 @@
+.Navbar{
+    padding: 20px  0px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.Navbar .logo{
+    width: 150px;
+}
+.Navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    color: #495574;
+}
+.Navbar-right{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}.Navbar button{
+    background: transparent;
+    font-size: 18px;
+    color: #49557e;
+    border:  1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 3px 3px 3px 3px;
+}
+.Navbar button:hover{
+    background-color: #fff4f2;
+}
+.Navbar .active{
+    border-bottom: 2px solid #495574;
+    
+    padding-bottom: 2px;
+}
+.Navbar li{
+    cursor: pointer;
+}.Navbar-search_icon{
+    position: relative;
+}
+.Navbar-search_icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}@media(max-width :1050px){
+    .Navbar .logo{
+        width: 140px;
+    }
+    .Navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .Navbar-right{
+        gap: 30px;
+    }
+    .Navbar-right img{
+        width: 22px;
+    }
+    .Navbar-right button{
+        padding: 8px 25px;
+    }
+}
+@media(max-width :900px){
+    .Navbar .logo{
+        width: 120px;
+    }
+    .Navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .Navbar-right{
+        gap: 20px;
+    }
+    .Navbar-right img{
+        width: 20px;
+    }
+    .Navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+@media(max-width :750px){
+    .Navbar-menu{
+        display: none;
+    }
+}
